@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - CLUB SPORTIF KOLEA</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label>Discipline :
+            <select name="discipline" required>
+                <option value="">--Choisir--</option>
+                <option value="natation">Natation</option>
+                <option value="handball">Handball Féminin</option>
+                <option value="football">Football</option>
+            </select>
+        </label><br><br>
+        <label>Nom : <input type="text" name="nom" required></label><br><br>
+        <label>Prénom : <input type="text" name="prenom" required></label><br><br>
+        <label>Date de naissance : <input type="date" name="naissance" required></label><br><br>
+        <label>Groupe sanguin :
+            <select name="sang" required>
+                <option value="">--Choisir--</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </label><br><br>
+        <label>Photo : <input type="file" name="photo" accept="image/*" required></label><br><br>
+        <label>Certificat médical : <input type="file" name="certificat" accept=".pdf,.jpg,.png" required></label><br><br>
+        <label>Acte de naissance : <input type="file" name="acte" accept=".pdf,.jpg,.png" required></label><br><br>
+        <label>Mode de paiement :
+            <select name="paiement" required>
+                <option value="">--Choisir--</option>
+                <option value="baridi">Baridi Mob</option>
+                <option value="dahabia">Carte Dahabia</option>
+                <option value="versement">Versement</option>
+                <option value="cash">Cash</option>
+            </select>
+        </label><br><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
