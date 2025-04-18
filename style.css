@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,7 +32,325 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: static;
     width: 100%;
     bottom: 0;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+form button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #0055aa;
+}
+/* Style pour la section Membres */
+.membres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.membre {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membre img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.membre h3 {
+    font-size: 18px;
+    color: #003366;
+}
+
+.membre p {
+    font-size: 14px;
+    color: #555;
+}
+.eshop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #003366;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.commande-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.commande-btn:hover {
+    background-color: #1ebd5a;
+}
+/* Style général de la page News */
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Titre des articles */
+.news-item h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Texte des articles */
+.news-item p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style du lien PDF */
+.pdf-link {
+    font-size: 16px;
+    color: #0066cc;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.pdf-link:hover {
+    color: #004d99;
+    text-decoration: underline;
+}
+
+/* Tableau des résultats de Handball */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+td {
+    background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) td {
+    background-color: #e9e9e9;
+}
+
+table tr:hover td {
+    background-color: #ddd;
+}
+
+/* Style du footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: static;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* ===== GALERIE ===== */
+.galerie-section {
+    margin-bottom: 40px;
+}
+
+.galerie-section h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.galerie img {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.galerie img:hover {
+    transform: scale(1.05);
+}
+/* Bouton vers la page news */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005266;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0055aa;
+}
+.btn-container {
+    text-align: right;
+    margin: 20px 0;
+}
+.pulse-icon {
+    animation: pulse 1.5s infinite;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+/* Centrage général et espacement des sections */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style des titres */
+h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Style de la liste */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Section contenant le contenu */
+.welcome-section,
+.president-section,
+.history-section,
+.values-section {
+    margin-bottom: 40px;
+}
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
 }
