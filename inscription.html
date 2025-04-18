@@ -26,45 +26,51 @@
 
     <main>
         <h1>Formulaire d'inscription</h1>
-        <form action="#" method="POST" enctype="multipart/form-data" class="formulaire">
+        <form action="https://formsubmit.co/cskolea42@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_captcha" value="false">
+          
+            <label>Nom :
+              <input type="text" name="nom" required>
+            </label>
+          
+            <label>Prénom :
+              <input type="text" name="prenom" required>
+            </label>
+          
+            <label>Date de naissance :
+              <input type="date" name="date_naissance" required>
+            </label>
+          
             <label>Discipline :
-                <select name="discipline" required>
-                    <option value="">--Choisir--</option>
-                    <option value="natation">Natation</option>
-                    <option value="handball">Handball Féminin</option>
-                    <option value="football">Football</option>
-                </select>
-            </label><br><br>
-            <label>Nom : <input type="text" name="nom" required></label><br><br>
-            <label>Prénom : <input type="text" name="prenom" required></label><br><br>
-            <label>Date de naissance : <input type="date" name="naissance" required></label><br><br>
+              <select name="discipline" required>
+                <option value="natation">Natation</option>
+                <option value="handball">Handball</option>
+                <option value="football">Football</option>
+              </select>
+            </label>
+          
             <label>Groupe sanguin :
-                <select name="sang" required>
-                    <option value="">--Choisir--</option>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                </select>
-            </label><br><br>
-            <label>Photo : <input type="file" name="photo" accept="image/*" required></label><br><br>
-            <label>Certificat médical : <input type="file" name="certificat" accept=".pdf,.jpg,.png" required></label><br><br>
-            <label>Acte de naissance : <input type="file" name="acte" accept=".pdf,.jpg,.png" required></label><br><br>
-            <label>Mode de paiement :
-                <select name="paiement" required>
-                    <option value="">--Choisir--</option>
-                    <option value="baridi">Baridi Mob</option>
-                    <option value="dahabia">Carte Dahabia</option>
-                    <option value="versement">Versement</option>
-                    <option value="cash">Cash</option>
-                </select>
-            </label><br><br>
+              <input type="text" name="groupe_sanguin">
+            </label>
+          
+            <label>Téléphone :
+              <input type="tel" name="telephone" required>
+            </label>
+          
+            <label>Certificat médical :
+              <input type="file" name="certificat_medical" accept=".pdf,.jpg,.jpeg,.png" required>
+            </label>
+          
+            <label>Photo :
+              <input type="file" name="photo" accept=".jpg,.jpeg,.png" required>
+            </label>
+          
+            <label>Acte de naissance :
+              <input type="file" name="acte_naissance" accept=".pdf,.jpg,.jpeg,.png" required>
+            </label>
+          
             <button type="submit">Envoyer</button>
-        </form>
+          </form>                    
     </main>
     <footer>
         <p>Contact : <a href="mailto:cskolea42@gmail.com" class="email-link">cskolea42@gmail.com</a></p>
